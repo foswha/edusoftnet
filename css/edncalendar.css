@@ -1,0 +1,87 @@
+.ed-calendar {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    border: 1px solid hsla(0, 0%, 90%, .7);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);
+    border-spacing: 0;
+    max-width: 252px;
+    min-width: 240px;
+    padding: 0;
+    min-height: 280px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    text-align: center;
+    font-size: 14px;
+}
+
+.ed-calendar .header {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.ed-calendar table {
+border-collapse: separate;
+    float: left;
+    margin: 0;
+    outline: 0;
+    padding: 0 10px 10px;
+    table-layout: fixed;
+    width: 100%;
+    background-color: transparent;
+    border-spacing: 6px;
+    text-align: center;
+}
+
+.ed-calendar th {
+    border-bottom: 0;
+    color: #1f2937;
+    font-weight: 500;
+    text-transform: none;
+    font-size: .75rem;
+}
+
+.ed-calendar td {
+    padding: 2px;
+    cursor: pointer;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.ed-calendar .bg-info {
+    background: #262626;
+    color: white;
+    border-radius: 9999px;
+    line-height: 1;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.ed-calendar .title {
+    flex: 1;
+    margin-left: 1rem;
+    color: #1c1b1f;
+    font-size: 14px;
+}
+
+.ed-calendar td.ed-disabled {
+    opacity: .35;
+    pointer-events: none;
+    touch-action: none;
+}
+
+.ed-calendar td:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 9999px;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+.ed-calendar .activeCell {
+    background: #212FE0;
+    color: white;
+    border-radius: 9999px;
+    line-height: 1;
+    width: 1.75rem;
+    height: 1.75rem;
+}
